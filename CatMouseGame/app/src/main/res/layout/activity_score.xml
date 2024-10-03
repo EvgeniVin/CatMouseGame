@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/s_s_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Счёт"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#5d861e"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/statisticsTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:stretchColumns="0, 1, 2, 3, 4" >
+
+        <!-- Шапка таблицы -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="№"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="%"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="24sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1.5"
+                android:src="@drawable/hit"
+                app:tint="@android:color/holo_green_dark"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1.5"
+                android:src="@drawable/miss"
+                app:tint="#CC0000"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="3.5"
+                android:src="@drawable/time"
+                android:gravity="center"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Назад"
+        android:textColor="#2c5d0c"
+        android:textStyle="bold" />
+
+</LinearLayout>

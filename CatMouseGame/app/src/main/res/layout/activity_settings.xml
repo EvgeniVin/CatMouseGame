@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/s_s_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Настройки"
+        android:textColor="#5d861e"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Размер"
+        android:textColor="#b5ba2c"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sizeSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:stepSize="100"
+        android:valueFrom="100"
+        android:valueTo="600"
+        app:thumbColor="#5d861e"
+        app:tickColorActive="#b5ba2c"
+        app:tickColorInactive="#2c5d0c"
+        app:trackColorActive="#2c5d0c"
+        app:trackColorInactive="#b5ba2c" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Скорость"
+        android:textColor="#b5ba2c"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/speedSlider"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stepSize="0.5"
+        android:valueFrom="0.5"
+        android:valueTo="5"
+        app:thumbColor="#5d861e"
+        app:tickColorActive="#b5ba2c"
+        app:tickColorInactive="#2c5d0c"
+        app:trackColorActive="#2c5d0c"
+        app:trackColorInactive="#b5ba2c"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Количество"
+        android:textColor="#b5ba2c"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/countSlider"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stepSize="1"
+        android:valueFrom="1"
+        android:valueTo="5"
+        app:thumbColor="#5d861e"
+        app:tickColorActive="#b5ba2c"
+        app:tickColorInactive="#2c5d0c"
+        app:trackColorActive="#2c5d0c"
+        app:trackColorInactive="#b5ba2c"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Отмена"
+            android:textColor="#2c5d0c"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Подтвердить"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#5d861e" />
+    </LinearLayout>
+</LinearLayout>
